@@ -29,6 +29,6 @@ ParOuImpar.question('Digite um número: ', (Number) => {
         console.log('O número ' + ip + ' é ímpar');
     }
 
-    ParOuImpar.close();
+    ParOuImpar.close()
 
 });
