@@ -9,24 +9,20 @@ const readline = require("readline");
 
 MaiorNumero = readline.createInterface({
 
-    input: Process.stdin,
+    input: process.stdin,
     output: process.stdout
 
 });
 
 MaiorNumero.question("Digite um número: ", (resposta1) => {
 
-MaiorNumero.question("Digite um número: ", (resposta2) => {
+MaiorNumero.question("Digite outro número: ", (resposta2) => {
 
     if (resposta1 > resposta2) {
 
         console.log('O número ' + resposta1 + ' é maior que ' + resposta2);
 
-    } elif (resposta1 < resposta2) {
-
-        console.log('O número ' + resposta2 + ' é maior que ' + resposta1);
-
-    } else (resposta1 === resposta2) {
+    } else {
 
         console.log('O número ' + resposta1 + ' é igual a ' + resposta2);
 
