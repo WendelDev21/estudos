@@ -70,7 +70,7 @@ Métodos do Carrinho:
 
  const carrinho = criarCarrinho();
 
- carrinho.adicionarItem('Maçã', 1.99, 25);
+ carrinho.adicionarItem('Maçã', 1.99, 7);
  carrinho.adicionarItem('Pão', 0.99, 2);
 
  console.log(carrinho.listarItens());
