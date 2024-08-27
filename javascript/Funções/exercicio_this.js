@@ -81,7 +81,7 @@ meuRelogio.adicionarMinutos(20);
 
 meuRelogio.exibirTempo();
 
-meuRelogio.adicionarSegundos(3700);
+meuRelogio.adicionarSegundos(4700);
 
 meuRelogio.exibirTempo();
 
