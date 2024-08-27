@@ -1,5 +1,5 @@
 /*
-Escreva um programa que conte de 1 a 1o usando um loop while
+Escreva um programa que conte de 1 a 1o usando um loop while.
 
 */
 
