@@ -22,8 +22,6 @@ const temBana = lista.includes('banana');
 
 console.log(`A lista contém banana: `, temBana);
 
-// ------------------------------
-
 let numeros = [1, 2, 4, 5];
 
 numeros.splice(2, 0, 3);
