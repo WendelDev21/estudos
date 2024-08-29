@@ -1,53 +1,201 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family: Arial, sans-serif;
+    /* Define as famílias de fontes do corpo do documento 
+            como Arial e, caso Arial não esteja disponível, 
+            usa uma fonte sans-serif genérica. */
+
     display: flex;
+    /* Estabelece o modelo de layout Flexbox para o elemento body, o 
+                que permite um layout mais flexível e responsivo. */
+
     justify-content: center;
+    /* Alinha os itens filhos do body (no eixo principal, que é 
+                horizontal por padrão no Flexbox) ao centro. 
+                Isso centraliza horizontalmente todo o conteúdo 
+                dentro do body. */
+
     align-items: center;
+    /* Alinha os itens filhos do body (no eixo cruzado, que é 
+                vertical por padrão no Flexbox) ao centro. Isso 
+                centraliza verticalmente todo o conteúdo dentro do body. */
+
     height: 100vh;
+    /* Define a altura do body como 100% da altura da janela de 
+                visualização (viewport), garantindo que o body 
+                ocupe toda a altura visível da tela. */
+
     background-color: #f0f0f0;
+    /* Define a cor de fundo do corpo do documento como um 
+                cinza claro (#f0f0f0). */
+
     margin: 0;
+    /* Remove todas as margens externas do body, garantindo que 
+                não haja espaço extra ao redor dos elementos no 
+                nível superior do corpo do documento. */
+
 }
 
 .container {
+
     text-align: center;
+    /* Alinha o texto e, por extensão, alguns tipos de conteúdo 
+                embutidos (como botões e inputs), ao centro do 
+                elemento com a classe 'container'. */
+
     background-color: #fff;
+    /* Define a cor de fundo dos elementos com a classe 'container' 
+                como branco (#fff). */
+
     padding: 20px;
+    /* Aplica um preenchimento interno de 20 pixels em todos os 
+                lados dos elementos com a classe 'container', o 
+                que aumenta o espaço entre o conteúdo interno e 
+                as bordas do elemento. */
+
     border-radius: 10px;
+    /* Arredonda os cantos da borda dos elementos com a 
+                classe 'container', com um raio de 10 pixels. 
+                Isso suaviza as bordas retangulares padrão 
+                para um visual mais estético. */
+
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Aplica uma sombra ao redor dos elementos com a 
+                classe 'container'. A sombra é sutil (10px de 
+                desfoque, e com uma transparência de 10%) e 
+                não se desloca do elemento (0px horizontalmente e 
+                verticalmente), criando um efeito de elevação sutil. */
+
 }
+
 
 h1 {
+
     margin-bottom: 20px;
+    /* Define a margem inferior para o elemento <h1> como 20 pixels. 
+                Isso adiciona espaço abaixo dos cabeçalhos <h1>, 
+                separando-os visualmente dos elementos que os 
+                seguem na página. */
+
 }
+
 
 input {
+
     width: 80%;
-    padding: 1px;
+    /* Define a largura dos elementos <input> para 80% da largura 
+                do seu elemento pai, permitindo um design responsivo 
+                que se ajusta ao tamanho do contêiner pai. */
+
+    padding: 10px;
+    /* Define um preenchimento interno de 10 pixels em todas as 
+                direções dentro dos elementos <input>, aumentando a 
+                área clicável e melhorando a legibilidade ao 
+                distanciar o texto das bordas. */
+
+    margin-bottom: 10px;
+    /* Define a margem inferior para os elementos <input> 
+                como 10 pixels, criando espaço abaixo de cada input 
+                antes do próximo elemento na página. */
+
     border: 1px solid #ccc;
+    /* Adiciona uma borda sólida de 1 pixel em torno dos 
+                elementos <input>, com uma cor cinza clara (#ccc), 
+                delineando claramente a área de input no 
+                design da interface. */
+
     border-radius: 5px;
+    /* Define o raio da borda dos elementos <input> para 5 
+                pixels, suavizando as bordas para um visual 
+                mais moderno e menos agressivo. */
+
     font-size: 16px;
+    /* Define o tamanho da fonte dentro dos elementos <input> 
+                para 16 pixels, garantindo que o texto seja 
+                suficientemente grande para ser lido facilmente 
+                sem precisar de zoom. */
+
 }
+
 
 button {
-    padding:  10px 20px;
+
+    padding: 10px 20px;
+    /* Aplica um preenchimento interno de 10 pixels na 
+                vertical e 20 pixels na horizontal em todos os 
+                elementos <button>. Isso aumenta o espaço 
+                dentro do botão, tornando-o mais fácil de 
+                clicar e visualmente agradável. */
+
     background-color: #007bff;
+    /* Define a cor de fundo dos botões como um azul 
+                brilhante (#007bff), que é visualmente atraente e 
+                destaca o botão como um elemento interativo na 
+                interface do usuário. */
+
     color: #fff;
+    /* Define a cor do texto dentro dos botões para 
+                branco (#fff), garantindo alto contraste com a 
+                cor de fundo azul para melhor legibilidade. */
+
     border: none;
+    /* Remove qualquer borda padrão do botão, criando uma 
+                aparência mais limpa e moderna. */
+
     border-radius: 5px;
+    /* Arredonda as bordas do botão com um raio de 5 pixels, 
+                suavizando as bordas para um estilo mais 
+                amigável e moderno. */
+
     font-size: 16px;
+    /* Define o tamanho da fonte dos textos dentro dos 
+                botões para 16 pixels, o que ajuda na 
+                legibilidade e acessibilidade. */
+
     cursor: pointer;
+    /* Muda o cursor para um ponteiro quando sobrevoa os 
+                botões, indicando que o elemento é clicável. */
+
     margin-top: 10px;
+    /* Adiciona uma margem superior de 10 pixels aos botões, 
+                separando-os dos elementos acima e ajudando a 
+                organizar visualmente a interface. */
+
 }
 
-button:hover{
+
+button:hover {
+
     background-color: #0056b3;
+    /* Altera a cor de fundo dos botões para um azul mais 
+                escuro (#0056b3) quando o mouse está sobre 
+                eles, proporcionando um feedback visual imediato 
+                que o botão é interativo e está focado. */
+
 }
 
 #qrcode {
+
     margin-top: 20px;
+    /* Define uma margem superior de 20 pixels para o elemento 
+                com o id 'qrcode'. Isso adiciona espaço entre o 
+                elemento 'qrcode' e quaisquer elementos que estejam 
+                acima dele na página, ajudando a separar 
+                visualmente o conteúdo. */
+
     display: flex;
+    /* Estabelece o modelo de layout Flexbox para o elemento 
+                com o id 'qrcode'. O Flexbox é um modelo de layout 
+                projetado para estruturar espaços uniformes entre 
+                itens em um contêiner e alinhá-los eficientemente, 
+                mesmo quando seus tamanhos são desconhecidos ou 
+                dinâmicos. */
+
     justify-content: center;
+    /* Alinha os itens filhos do elemento com o id 'qrcode' (no 
+                eixo principal, que é horizontal por padrão no 
+                Flexbox) ao centro. Este estilo é utilizado para 
+                centralizar o conteúdo do QR code horizontalmente 
+                dentro do contêiner 'qrcode'. */
+                
 }
-
-
-

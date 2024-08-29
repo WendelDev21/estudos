@@ -1,32 +1,88 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+<!-- Declara que o documento é um documento HTML5, o que 
+        ajuda os navegadores a renderizar o conteúdo 
+        corretamente seguindo as regras do HTML5. -->
+
 <html lang="pt-br">
+<!-- Abre a tag HTML definindo o idioma do documento como 
+            português do Brasil, o que é útil para acessibilidade e 
+            motores de busca. -->
+
 <head>
+<!-- Início do cabeçalho do documento HTML, contém metadados e 
+            links para scripts e folhas de estilo. -->
+
     <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres para UTF-8, que inclui a 
+            maioria dos caracteres usados globalmente, garantindo a 
+            correta exibição de caracteres especiais e acentos. -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de QR code</title>
+    <!-- Configura a visualização para ser responsiva em diferentes 
+            dispositivos. Esta linha garante que a largura da 
+            viewport (área de visualização) do dispositivo seja 
+            igual à largura do dispositivo e que a escala inicial 
+            seja 1, ou seja, sem zoom inicial. -->
+
+    <title>Gerador de QR Code</title>
+    <!-- Define o título da página, que aparece na aba do 
+            navegador e é usado em SEO e favoritos. -->
 
     <link rel="stylesheet" href="style.css">
+    <!-- Link para a folha de estilos externa chamada 'estilo.css', que 
+            contém os estilos CSS para estilizar a página. -->
 
 </head>
+<!-- Fim do cabeçalho do documento. -->
+
+
 <body>
+<!-- Início do corpo do documento HTML, onde todo o 
+            conteúdo visível da página é inserido. -->
 
     <div class="container">
+    <!-- Divisão ou seção na página, definida com uma classe 'container' 
+                para aplicar estilos específicos através do CSS. -->
 
-        <h1>Gerador de QR code</h1>
+        <h1>Gerador de QR Code</h1>
+        <!-- Cabeçalho principal (h1) da página, utilizado aqui para 
+                dar um título visível na parte superior da aplicação. -->
 
         <input type="text" id="entradaTexto" placeholder="Digite o texto ou URL">
+        <!-- Campo de entrada de texto onde o usuário pode digitar o 
+                    texto ou URL que será convertido em QR Code. 
+                    O atributo 'placeholder' fornece um texto guia dentro do campo. -->
 
-        <button id="botaoGerar">Gerar QR code</button>
+        <button id="botaoGerar">Gerar QR Code</button>
+        <!-- Botão que, quando clicado, acionará a geração do QR Code 
+                    baseado no texto inserido no campo de entrada acima. -->
 
         <div id="qrcode"></div>
+        <!-- Divisão onde o QR Code gerado será exibido. Inicialmente 
+                    vazia, será preenchida dinamicamente pelo script. -->
 
-        <button id="botaoBaixar" style="display: none;">Baixar QR code</button>
+        <button id="botaoBaixar" style="display: none;">Baixar QR Code</button>
+        <!-- Botão para baixar o QR Code gerado. Inicialmente 
+                    oculto (display: none), será exibido após a 
+                    geração do QR Code pelo JavaScript. -->
 
     </div>
+    <!-- Fim da divisão 'container'. -->
 
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
-    
+    <!-- Inclusão do script externo 'qrcode.min.js' da biblioteca QRCodeJS 
+                    que permite a geração de QR Codes. Este script é 
+                    necessário para criar os códigos a partir do 
+                    texto fornecido. -->
+
     <script src="script.js"></script>
+    <!-- Inclusão do script externo 'script.js', que contém a 
+                    lógica JavaScript específica para esta aplicação, 
+                    como a manipulação de eventos de clique e a lógica 
+                    para gerar e baixar QR Codes. -->
 
 </body>
+<!-- Fim do corpo do documento HTML. -->
+
 </html>
+<!-- Fim do documento HTML. -->
