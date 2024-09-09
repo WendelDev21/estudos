@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Define a data e hora do evento. 'new Date('May 10, 2024 00:00:00')'
 // cria um objeto de data representando 10 de maio de 2024 à meia-noite.
-const dataEvento = new Date('Sep 09, 2024 17:00:00').getTime();
+const dataEvento = new Date('Dec 25, 2024 00:00:00').getTime();
 
 // Define um intervalo de tempo que executa uma função em um
 // loop a cada segundo (1000 milissegundos).
